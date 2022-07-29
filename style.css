@@ -1,0 +1,42 @@
+body{
+    background-color: #7bae7f;
+    font-family:verdana;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+p {
+    font-size: 100%;
+    padding: 20px
+}
+
+header {
+    background-color:#207654;
+    padding:0.25rem;
+    padding-left:1rem;
+    border-left-style: solid;
+    border-left-color: black;
+    border-left-width: 5px;
+}
+
+.box {
+    display: flex;
+}
+
+.card {
+    margin:1rem
+    /* border: 20px black; */
+    /* box-shadow: 5px 10px; */
+}
+
+.shadow{
+    border-bottom: solid;
+    border-top: solid;
+    border-left: solid;
+    border-right: solid;
+    box-shadow: 5px 10px;
+}
+
+.nobackgroundheading {
+    margin-top: 1.5rem;
+}
