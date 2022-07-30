@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-   <title>Sarah's Pond</title>
+    <title>Sarah's Pond</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
 </head>
-<body>
 
-    <h1>Let Sarah build a pond</h1>
+<body>
+    <ul class="PondPlantsNavBar">
+        <li>Home</li>
+        <li><a href="./PondPlants/">Pond Plants</a></li>
+        <li>FAQs</li>
+    </ul>
+
+
+    <h1 style="margin-top:3rem">Let Sarah build a pond</h1>
     <header>
         <h4>A request to improve our garden</h4>
     </header>
@@ -15,28 +23,43 @@
     <div class="box">
         <div class="card">
             <h3>Aesthetics</h3>
-                <div class="shadow">
-                    <p>Very obviously, ponds are really pretty. In addition to this, the wildlife that they encourage is also beautiful.</p>
-                </div>
+            <div class="shadow">
+                <p>Very obviously, ponds are really pretty. In addition to this, the wildlife that they encourage is
+                    also beautiful.</p>
+            </div>
         </div>
         <div class="card">
             <h3>Biodiversity</h3>
-                <div class="shadow">
-                    <p>They encourage frog populations. Which is rad.</p>
-                </div>
+            <div class="shadow">
+                <p>They encourage frog populations. Which is rad.</p>
+            </div>
         </div>
         <div class="card">
             <h3>Fun</h3>
-                <div class="shadow">
-                    <p>I want to go wild with a pickaxe and dig a big hole.</p>
-                </div>
+            <div class="shadow">
+                <p>I want to go wild with a pickaxe and dig a big hole.</p>
+            </div>
         </div>
     </div>
 
-<div class="nobackgroundheading">
-    <h3>Possible layout</h4>
-</div>
-<img src="./pond graphic.png" alt="diagram of a pond" style="width:50%;margin:1rem">
+    <div class="nobackgroundheading">
+        <h3>Possible layout</h4>
+    </div>
+    <img src="./pond graphic.png" alt="diagram of a pond" style="width:50%;margin:1rem">
+
+    <button type="button" onclick="frogButtonClick()" class="frogBtn">Click here if you like frogs</button>
+
+    <div class="frogGangModalWrapper">
+        <div class="frogGangModal">
+            <div class="closeButtonWrapper">
+                <button type="button" onclick="modalClose()">Close</button>
+            </div>
+            <h3>Hello there</h3>
+            <p>You are now a certified member of the frog gang!</p>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
 </body>
 
 </html>

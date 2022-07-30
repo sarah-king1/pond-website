@@ -40,3 +40,86 @@ header {
 .nobackgroundheading {
     margin-top: 1.5rem;
 }
+
+.frogGangModalWrapper {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 128, 64, 0.4);
+}
+
+.frogGangModal {
+    height: fit-content;
+    width: 200px;
+    background-color: white;
+    border-radius: 0.25rem;
+}
+
+.frogGangModal > button {
+    margin: 0.5rem;
+}
+
+.frogGangModal > h3 {
+    text-align: center;
+    margin: 0.25rem;
+}
+
+.frogGangModal > p {
+    padding-top: 0.25rem;
+}
+
+.closeButtonWrapper {
+    display:flex;
+    justify-content: right;
+    padding:0.25rem;
+}
+
+.PondPlantsNavBar {
+    list-style-type: none;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.4);
+}
+
+.PondPlantsNavBar > li {
+    float:right;
+    display:block;
+    padding:0.5rem;
+    /* background-color: #207654; */
+}
+
+.frogBtn {
+    color: white;
+    padding: 0.25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background-color: darkgreen;
+    border-radius: 1rem;
+    border: none;
+    transition: all 0.1s linear;
+}
+
+.frogBtn:hover {
+    transform: scale(1.1);
+}
+
+.frogBtn:active {
+    transform: translateY(0.1rem);
+}
+
+img:hover {
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transform: rotateZ(5deg)
+}
