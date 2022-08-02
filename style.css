@@ -21,12 +21,26 @@ header {
 
 .box {
     display: flex;
+
 }
 
 .card {
-    margin:1rem
+    margin:1rem;
     /* border: 20px black; */
     /* box-shadow: 5px 10px; */
+}
+
+.PondCard {
+    background-color: #207654;
+    margin: 0.25rem;
+    padding: 0.25rem;
+    text-align: center;
+}
+
+.PondCard > h3 {
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
 }
 
 .shadow{
@@ -98,6 +112,25 @@ header {
     display:block;
     padding:0.5rem;
     /* background-color: #207654; */
+   
+}
+
+li:hover {
+    background-color:#207654;
+}
+
+
+.active{
+    background-color: #207654;
+    padding:0.5rem;
+}
+
+
+
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color:white
 }
 
 .frogBtn {
