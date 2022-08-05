@@ -1,8 +1,10 @@
-body{
-    background-color: #7bae7f;
-    font-family:verdana;
+body {
+    /* background-color: #006d77; */
+    background-color: #001524;
+    font-family: verdana;
     margin-left: 20px;
     margin-right: 20px;
+    color: whitesmoke;
 }
 
 p {
@@ -11,44 +13,49 @@ p {
 }
 
 header {
-    background-color:#207654;
-    padding:0.25rem;
-    padding-left:1rem;
+    /* background-color:#83c5be; */
+    /* background-color: #15616d; */
+    padding: 0.1rem;
+    padding-left: 1rem;
+    margin-left: 1rem;
     border-left-style: solid;
-    border-left-color: black;
+    border-left-color: #e29578;
     border-left-width: 5px;
+    color: #e29578;
 }
 
 .box {
     display: flex;
-
 }
 
 .card {
-    margin:1rem;
+    margin: 1rem;
+    /* background-color: rgba(0, 109, 119); */
     /* border: 20px black; */
     /* box-shadow: 5px 10px; */
 }
 
 .PondCard {
-    background-color: #207654;
-    margin: 0.25rem;
+    /* background-color: #83c5be; */
+    background-color: #e29578;
+    margin: 0.5rem;
     padding: 0.25rem;
     text-align: center;
+    width: 100%;
 }
 
-.PondCard > h3 {
+.PondCard>h3 {
     padding: 1rem;
     margin: 1rem;
-    text-align: center;
 }
 
-.shadow{
+.shadow {
     border-bottom: solid;
     border-top: solid;
     border-left: solid;
     border-right: solid;
     box-shadow: 5px 10px;
+    background-color: #15616d;
 }
 
 .nobackgroundheading {
@@ -64,38 +71,39 @@ header {
     width: 100%;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 128, 64, 0.4);
+    background-color: rgba(255, 221, 210, 0.5);
 }
 
 .frogGangModal {
     height: fit-content;
     width: 200px;
-    background-color: white;
+    background-color: whitesmoke;
     border-radius: 0.25rem;
 }
 
-.frogGangModal > button {
+.frogGangModal>button {
     margin: 0.5rem;
 }
 
-.frogGangModal > h3 {
+.frogGangModal>h3 {
     text-align: center;
     margin: 0.25rem;
 }
 
-.frogGangModal > p {
+.frogGangModal>p {
     padding-top: 0.25rem;
 }
 
 .closeButtonWrapper {
-    display:flex;
+    display: flex;
     justify-content: right;
-    padding:0.25rem;
+    padding: 0.25rem;
 }
 
 .PondPlantsNavBar {
     list-style-type: none;
-    background-color: black;
+    /* background-color: #e29578; */
+    background-color: #001524;
     color: white;
     overflow: hidden;
     position: fixed;
@@ -107,30 +115,30 @@ header {
     box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.4);
 }
 
-.PondPlantsNavBar > li {
-    float:right;
-    display:block;
-    padding:0.5rem;
-    /* background-color: #207654; */
-   
+.PondPlantsNavBar>li {
+    float: right;
+    display: block;
+    padding: 0.5rem;
 }
 
 li:hover {
-    background-color:#207654;
+    background-color: #ffddd2;
 }
 
 
-.active{
-    background-color: #207654;
-    padding:0.5rem;
+.active {
+    background-color: #e29578;
 }
 
 
 
 
-a:link, a:visited, a:hover, a:active {
+a:link,
+a:visited,
+a:hover,
+a:active {
     text-decoration: none;
-    color:white
+    color: white
 }
 
 .frogBtn {
@@ -138,10 +146,11 @@ a:link, a:visited, a:hover, a:active {
     padding: 0.25rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    background-color: darkgreen;
+    background-color: #e29578;
     border-radius: 1rem;
     border: none;
     transition: all 0.1s linear;
+    margin-bottom: 4rem;
 }
 
 .frogBtn:hover {
@@ -155,4 +164,31 @@ a:link, a:visited, a:hover, a:active {
 img:hover {
     transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
     transform: rotateZ(5deg)
+}
+
+.AssBar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #001524;
+    margin-bottom: 0%;
+    margin-top: 2rem;
+    left: 0;
+    overflow: hidden;
+    box-shadow: 0px -10px 8px rgba(0, 0, 0, 0.4);
+}
+
+.AssInfo {
+    display: block;
+    float: left;
+    list-style-type: none;
+    width: 33.33%;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    box-sizing: border-box;
+}
+
+.ColumnsTest {
+    column-count: 3;
 }
