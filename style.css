@@ -214,3 +214,21 @@ img:hover {
 .ColumnsTest {
     column-count: 3;
 }
+
+
+
+
+
+.SideBarBox{
+    display: flex;
+    color: whitesmoke;
+    flex-direction: column;
+    box-shadow: 10px 0px 8px rgba(0, 0, 0, 0.4);
+    height: 100%;
+    width: fit-content;
+}
+
+.SideBarCard{
+    display:flex;
+    color: whitesmoke;
+}
