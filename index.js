@@ -5,3 +5,7 @@ function frogButtonClick () {
 function modalClose() {
     document.querySelector('.frogGangModalWrapper').style.display = 'none'
 }
+
+function ChangeParagraph() {
+    document.getElementById("WordsToChange").innerHTML = "It is very confusing"
+  }
